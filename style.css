@@ -264,6 +264,25 @@ img {
     width: 35%;
 }*/
 
+.home
+{
+    /*background-color: red;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 15%;
+}
+.home_pictures
+{
+    width: 26%;
+    padding: 10px;
+    /*background-color: #1db954;*/
+
+}
+
+
+
+
 /****_______________________________________Caroussel___________________________*/
 
 
@@ -378,16 +397,6 @@ img {
     color:#fff;
 }
 
-.home
-{
-    background-color: red;
-    display: flex;
-    flex-wrap: wrap;
-}
-.home_pictures
-{
-
-}
 
 .row{
     background-color: #fa8aa3;
