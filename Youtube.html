@@ -14,25 +14,24 @@
     <div class="body">
 
         <nav>
-            <div class="logo">
-                <img src="logs.png"/>
-            </div>
+
 
             <ul class="menu">
                 <li>Accueil</li>
-                <li>Recherche</li>
-                <li>Bibliothèque</li>
+                <li>Spotify</li>
+                <li>Youtube</li>
             </ul>
         </nav>
-
         <div class="row">
-            <button onclick="authenticate().then(loadClient)">authorize and load</button>
-            <button onclick="execute()">execute</button>
+            <button class="button button bis" onclick="authenticate().then(loadClient)">authorize and load</button>
+            <button class="button button bis" onclick="execute()">execute</button>
 
         </div>
 
 </div>
     <script src="https://apis.google.com/js/api.js"></script>
     <script src="script.js"></script>
+
+
 </body>
 </html>
