@@ -17,21 +17,28 @@
 
 
             <ul class="menu">
+
                 <a href="playlist.html"><li>ACCUEIL</li></a>
                 <a href="Youtube.html"> <li>YOUTUBE</li></a>
                 <a href="page.html"><li>SPOTIFY</li></a>
 
+
+                <li>Accueil</li>
+                <li>Spotify</li>
+                <li>Youtube</li>
+
             </ul>
         </nav>
-
         <div class="row">
-            <button onclick="authenticate().then(loadClient)">authorize and load</button>
-            <button onclick="execute()">execute</button>
+            <button class="button button bis" onclick="authenticate().then(loadClient)">authorize and load</button>
+            <button class="button button bis" onclick="execute()">execute</button>
 
         </div>
 
 </div>
     <script src="https://apis.google.com/js/api.js"></script>
     <script src="script.js"></script>
+
+
 </body>
 </html>
