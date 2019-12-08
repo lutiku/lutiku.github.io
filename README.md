@@ -38,23 +38,18 @@ There are two parts to it, the auth-server, and the client.
 
 # Youtube API/Auth2 App
 
-> App that uses Youtube API v3 to fetch and display channel data and latest videos. Uses Auth2 library to authenticate
+> App that uses Youtube API v3 to fetch and display  videos. Uses Auth2 library to authenticate
 
 ## Quick Start
 
-Add Your OAuth client id to main.js and open index.html
+Add Your OAuth client id to your js file and open index.html
 
 ## App Info
 
 ### Author
 
-Brad Traversy
-[Traversy Media](http://www.traversymedia.com)
+Gumma-Saad Alyza and Ndongala Lutiku
 
-### Version
 
-1.0.0
 
-### License
 
-This project is licensed under the MIT Lic
