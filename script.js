@@ -129,21 +129,12 @@ function getTracksData() {
     }
 
 
-
-
-
     window.onload = function jorja() {
         document.getElementById("jorja").onclick = function(){
             xhrTracksData.open('GET', 'https://api.spotify.com/v1/artists/1CoZyIx7UvdxT5c8UkMzHd/top-tracks?country=FR')
             xhrTracksData.send()
         }
     }
-
-
-
-
-
-
 
 }
 
@@ -299,8 +290,58 @@ function getSearchData() {
 
 getSearchData()*/
 
+// API YOUTUBE
+/*
 
 
+function getApiData() {
+    const xhr = new XMLHttpRequest()
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(xhr.responseText)
+            console.log(data)
+
+            const channel= data.items[0].channel[0].name
+            console.log(channel)
+
+
+        }
+    }
+}
+
+/*
+
+
+
+var gapi
+
+function authenticate() {
+    return gapi.auth2.getAuthInstance()
+        .signIn({scope: "https://www.googleapis.com/auth/youtube.readonly"})
+        .then(function() { console.log("Sign-in successful"); },
+            function(err) { console.error("Error signing in", err); });
+}
+function loadClient() {
+    gapi.client.setApiKey("AIzaSyDnqB0BPgDul4yHWQIiJNkW4Ok4uQ5O4DA");
+    return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
+        .then(function() { console.log("GAPI client loaded for API"); },
+            function(err) { console.error("Error loading GAPI client for API", err); });
+}
+// Make sure the client is loaded and sign-in is complete before calling this method.
+function execute() {
+    return gapi.client.youtube.channels.list({
+        "part": "snippet",
+        "forUsername": "AnimalPlanetTV"
+    })
+        .then(function(response) {
+                // Handle the results here (response.result has the parsed body).
+                console.log("Response", response);
+            },
+            function(err) { console.error("Execute error", err); });
+}
+gapi.load("client:auth2", function() {
+    gapi.auth2.init({client_id: "52353213905-n4vgqaoi94rqkmb2mrvvu2s8eld5enk1.apps.googleusercontent.com"});
+});
 
 
 

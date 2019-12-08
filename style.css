@@ -15,10 +15,7 @@ body
 .body
 {
 
-
     display: flex;
-
-
 
 }
 
@@ -405,4 +402,10 @@ img {
 }
 
 
-
+.row{
+    background-color: #fa8aa3;
+    height: 300px;
+    width: 70%;
+    margin-left: 320px;
+    margin-top: 200px;
+}
