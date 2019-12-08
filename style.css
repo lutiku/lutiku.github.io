@@ -63,7 +63,7 @@ main
     height:300px;
     margin-left:10%;
     display: block;
-    margin-top: 10%;
+    margin-top: 30%;
 }
 
 img
@@ -75,12 +75,14 @@ img
 
 .menu  li
 {
-    color: #b3b3b3;
+    color: #FFFFFF;
+    opacity: 90.0%;
 
     text-align: center;
     padding: 5%;
     list-style: none;
     font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
 
 }
 
@@ -88,6 +90,11 @@ img
 .menu  li :hover
 {
     color: red;
+}
+
+.menu a
+{
+    text-decoration: none;
 }
 /*
 .playmusic
