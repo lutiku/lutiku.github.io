@@ -3,7 +3,7 @@
 
 
 /*_______________________________________*/
-/*
+
 function getApiData() {
     const xhr = new XMLHttpRequest()
     xhr.onreadystatechange = function () {
@@ -27,7 +27,7 @@ function getApiData() {
 
 
             /*Boucle for qui récupère toutes les images*/
-/*
+
             const nbitems = data.items.length
 
             for(let i=0; i< nbitems ; i++)
@@ -43,10 +43,10 @@ function getApiData() {
                     console.log(resultimages)
                 }
             }
-*/
+
 
             /*Boucle qui récupère Les images de taille moyenne + titre des chansons qui corespond à chaque image*/
-/*
+
             const nbitems_moyen = data.items.length
 
             for(let i=0; i< nbitems_moyen ; i++)
@@ -66,7 +66,7 @@ function getApiData() {
 
             } /*fin boucle*/
 
-            /*Boucle for qui récupère le titre des chansons
+            /*Boucle for qui récupère le titre des chansons*/
             const nbitems_name = data.items.length
 
             for(let n=0; n< nbitems_name ; n++) {
@@ -82,7 +82,7 @@ function getApiData() {
 
             }/*Fin boucle*/
 
-/*
+
 
         }
 
@@ -104,7 +104,7 @@ getApiData()
 
 
 
-/*Récupérer le titre des tracks
+/*Récupérer le titre des tracks*/
 
 
 function getTracksData() {
@@ -138,15 +138,15 @@ function getTracksData() {
     }
 
 }
-/*
+
 getTracksData()
 
 
 
 
 
-/* ______________Artist_data*____________________________________*/
-/*
+/* ______________Artist_data*____________________________________
+
 function getTracksData() {
     const xhrTracksData = new XMLHttpRequest()
     xhrTracksData.onreadystatechange = function () {
@@ -183,12 +183,14 @@ function getTracksData() {
 
 getTracksData()
 
+ */
 
 
-*/
 
 
-/*_______________________________________CAROUSSEL_________________________
+
+
+/*_______________________________________CAROUSSEL_________________________*/
 
 
 function moveToSelected(element)
