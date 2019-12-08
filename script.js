@@ -134,12 +134,9 @@ function getTracksData() {
     }
 
 
-    window.onload = function jorja() {
-        document.getElementById("jorja").onclick = function(){
             xhrTracksData.open('GET', 'https://api.spotify.com/v1/artists/1CoZyIx7UvdxT5c8UkMzHd/top-tracks?country=FR')
             xhrTracksData.send()
-        }
-    }
+
 
 }
 
@@ -154,7 +151,7 @@ getTracksData()
 
 /* ______________Artist_data*____________________________________*/
 
-
+/*
 function getTracksData() {
     const xhrTracksData = new XMLHttpRequest()
     xhrTracksData.onreadystatechange = function () {
@@ -191,7 +188,7 @@ function getTracksData() {
 
 getTracksData()
 
-
+*/
 
 
 
@@ -266,7 +263,7 @@ $('#next').click(function() {
 /*____________________________________SEARCH___________________*/
 
 
-
+/*
 
 function getSearchData() {
     const xhrSearchData = new XMLHttpRequest()
@@ -299,6 +296,9 @@ function getSearchData() {
 }
 
 getSearchData()
+
+
+ */
 
 // API YOUTUBE
 /*
