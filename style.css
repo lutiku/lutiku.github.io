@@ -1,0 +1,392 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #121212;
+
+
+
+
+}
+.body
+{
+
+
+    display: flex;
+
+
+
+}
+
+nav
+{
+    width:16% ;
+    height:1000px ;
+    background-color: #000000;
+    opacity: 80.0% ;
+    position : fixed;
+    margin-top: 0;
+
+
+
+}
+
+main
+{
+    /*background-color: green;*/
+    width:84%;
+    height:100%;
+    margin-left: 16%;
+
+
+
+
+}
+
+.logo
+{
+
+    width:60%;
+    margin-left: 8%;
+    margin-top: 20px;
+    height:45px;
+}
+
+.menu
+{
+   /* background-color: green;*/
+    width: 80%;
+    height:300px;
+    margin-left:10%;
+    display: block;
+    margin-top: 10%;
+}
+
+img
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+.menu  li
+{
+    color: #b3b3b3;
+
+    text-align: center;
+    padding: 5%;
+    list-style: none;
+    font-family: 'Public Sans', sans-serif;
+
+}
+
+
+.menu  li :hover
+{
+    color: red;
+}
+/*
+.playmusic
+{
+    width:84%;
+    height: 90px;
+    background-color: red;
+    margin-left: 16%;
+
+}*/
+
+ .Section_single_Eps
+{
+
+    width: 100%;
+    height: 400px;
+
+}
+
+.background_img
+{
+    /*background-color: red;*/
+    width: 100%;
+    height: 662px;
+    margin: 0% auto;
+
+
+}
+
+
+
+
+.popularTracks, .albums
+{
+
+    width: 100%;
+    height: 520px;
+   /* background-color: purple;*/
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-around;
+}
+
+.albums
+{
+    /*background-color: red;*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+.Section_single_Eps
+{
+    /*background-color: orange;*/
+    color: white;
+
+
+}
+
+h2
+{
+    margin-left: 2%;
+
+    /*background-color: black;*/
+    width: 15.2%;
+    color: white;
+}
+
+
+
+.Single_Ep /* div qui contient les images pour chauqe chanson*/
+{
+    /*background-color: brown;*/
+    display: flex;
+    flex-wrap: wrap;
+
+
+
+}
+
+.image_single /*div qui contient les images*/
+{
+    width: 12%;
+    height:38%;
+    /*background-color: pink;*/
+
+    margin-top: 5%;
+    margin-left: 40px;
+
+
+}
+
+iframe
+{
+    margin-left:5%;
+}
+
+.tracks
+{
+
+    display: flex;
+}
+.tracks p
+{
+    margin-top: 26px;
+    margin-left: 10px;
+    /*font-family: Roboto;*/
+    color: white;
+    opacity: 75.0%;
+}
+
+#toggle
+{
+    display: flex;
+    /*background-color: orange;*/
+    width: 84%;
+    height: 350px;
+
+}
+
+a#toggler
+{
+
+    /*background-color: red;*/
+    height: 10px;
+    margin-top: 11%;
+    margin-left: 8px;
+    color: white;
+    font-family: 'Public Sans', sans-serif;
+
+}
+
+.container {
+    margin: 1em;
+}
+
+img {
+    margin-bottom: 1em;
+}
+
+.title
+{
+    /*background-color: red;*/
+    display: flex;
+    height: 20px;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+/*.title_second
+{
+
+    display: flex;
+    margin-top: 20%;
+    height: 80px;
+}*/
+
+.title0, .title1, .title2, .title3, .title4, .title5
+{
+    display: flex;
+    flex-wrap: wrap;
+    /*background-color: yellow;*/
+    padding: 9px;
+    font-size: 15px;
+}
+/*
+.image_JoSm
+{
+    background-color: indigo;
+    height: 85%;
+    width: 35%;
+}*/
+
+/****_______________________________________Caroussel___________________________*/
+
+
+#carousel {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+   /* background-color: yellow;*/
+    margin-top: 12%;
+
+
+}
+#carousel div {
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+}
+#carousel div img {
+    width: 400px;
+    transition: width 1s;
+}
+#carousel div.hideLeft {
+    left: 0%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideLeft img {
+    width: 200px;
+}
+#carousel div.hideRight {
+    left: 100%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideRight img {
+    width: 200px;
+}
+#carousel div.prev {
+    z-index: 5;
+    left: 30%;
+    transform: translateY(50px) translateX(-50%);
+}
+#carousel div.prev img {
+    width: 300px;
+}
+#carousel div.prevLeftSecond {
+    z-index: 4;
+    left: 15%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+}
+#carousel div.prevLeftSecond img {
+    width: 200px;
+}
+#carousel div.selected {
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+}
+#carousel div.next {
+    z-index: 5;
+    left: 70%;
+    transform: translateY(50px) translateX(-50%);
+}
+#carousel div.next img {
+    width: 300px;
+}
+#carousel div.nextRightSecond {
+    z-index: 4;
+    left: 85%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+}
+#carousel div.nextRightSecond img {
+    width: 200px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 12%;
+    /*background-color: white;*/
+
+
+
+}
+
+#prev,#next
+{
+
+    border-color: #1db954;
+    border-radius: 30px;
+    width: 130px;
+    height: 40px;
+    font-family: 'Public Sans', sans-serif;
+
+    font-size: small;
+
+}
+
+#next
+{
+    margin-left: 20px;
+    background-color: transparent;
+    color:#1db954 ;
+
+}
+
+#prev
+{
+    background-color: #1db954;
+    color:#fff;
+}
+
+.home
+{
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+}
+.home_pictures
+{
+
+}
+
+
