@@ -3,7 +3,7 @@
 
 
 /*_______________________________________*/
-/*
+
 function getApiData() {
     const xhr = new XMLHttpRequest()
     xhr.onreadystatechange = function () {
@@ -46,7 +46,7 @@ function getApiData() {
 */
 
             /*Boucle qui récupère Les images de taille moyenne + titre des chansons qui corespond à chaque image*/
-/*
+
             const nbitems_moyen = data.items.length
 
             for(let i=0; i< nbitems_moyen ; i++)
@@ -82,7 +82,7 @@ function getApiData() {
 
             }/*Fin boucle*/
 
-/*
+
 
         }
 
@@ -104,7 +104,7 @@ getApiData()
 
 
 
-/*Récupérer le titre des tracks
+Récupérer le titre des tracks
 
 
 function getTracksData() {
@@ -138,7 +138,7 @@ function getTracksData() {
     }
 
 }
-/*
+
 getTracksData()
 
 
@@ -146,7 +146,7 @@ getTracksData()
 
 
 /* ______________Artist_data*____________________________________*/
-/*
+
 function getTracksData() {
     const xhrTracksData = new XMLHttpRequest()
     xhrTracksData.onreadystatechange = function () {
@@ -185,10 +185,10 @@ getTracksData()
 
 
 
-*/
 
 
-/*_______________________________________CAROUSSEL_________________________
+
+/*_______________________________________CAROUSSEL_________________________*/
 
 
 function moveToSelected(element)
@@ -257,7 +257,7 @@ $('#next').click(function() {
 /*____________________________________SEARCH___________________*/
 
 
-/*
+
 
 function getSearchData() {
     const xhrSearchData = new XMLHttpRequest()
@@ -289,10 +289,10 @@ function getSearchData() {
 
 }
 
-getSearchData()*/
+getSearchData()
 
 // API YOUTUBE
-
+/*
 
 function authenticate() {
     return gapi.auth2.getAuthInstance()
@@ -321,9 +321,9 @@ function execute() {
 gapi.load("client:auth2", function() {
     gapi.auth2.init({client_id: "52353213905-n4vgqaoi94rqkmb2mrvvu2s8eld5enk1.apps.googleusercontent.com"});
 });
+*/
 
 /*
-
 function getApiData() {
     const xhr = new XMLHttpRequest()
     xhr.onreadystatechange = function () {
@@ -337,10 +337,10 @@ function getApiData() {
         }
     }
 
-    xhr.open('GET', ' https://www.googleapis.com/youtube/v3/channels')
+    xhr.open('GET', ' https://www.googleapis.com/youtube/v3/channels?part=snippet%2CcontentDetails%2Cstatistics&forUsername=vevo&key=AIzaSyDnqB0BPgDul4yHWQIiJNkW4Ok4uQ5O4DA')
     xhr.send()
 }
-
+/*
 function getChannels (){
     var url = "https://www.googleapis.com/youtube/v3/channels"
 
