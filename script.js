@@ -104,7 +104,7 @@ getApiData()
 
 
 
-Récupérer le titre des tracks
+/*Récupérer le titre des tracks*/
 
 
 function getTracksData() {
@@ -277,7 +277,7 @@ function getSearchData() {
         }
     }
 
-    function search() {
+   /* function search() {
         const artist = document.getElementById("artist").value;
         console.log(artist);
     }
@@ -287,11 +287,41 @@ function getSearchData() {
 
     xhrSearchData.send()
 
-}
+}*/
 
 getSearchData()
 
 // API YOUTUBE
+
+function getApiData() {
+    const xhr = new XMLHttpRequest()
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(xhr.responseText)
+            console.log(data)
+
+            const channel= data.items[0].channel[0].name.length
+            console.log(channel)
+
+        }
+    }
+
+    xhr.open('GET', ' https://www.googleapis.com/youtube/v3/channels?part=snippet%2CcontentDetails%2Cstatistics&forUsername=vevo&key=AIzaSyDnqB0BPgDul4yHWQIiJNkW4Ok4uQ5O4DA')
+    xhr.send()
+}
+
+
+/*
+function getChannels (){
+    var url = "https://www.googleapis.com/youtube/v3/channels"
+
+    $.get(url, )
+}
+
+
+
+
+
 /*
 
 function authenticate() {
@@ -324,75 +354,8 @@ gapi.load("client:auth2", function() {
 */
 
 /*
-function getApiData() {
-    const xhr = new XMLHttpRequest()
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4) {
-            const data = JSON.parse(xhr.responseText)
-            console.log(data)
 
-            const channel= data.items[0].channel[0].name.length
-            console.log(channel)
-
-        }
-    }
-
-    xhr.open('GET', ' https://www.googleapis.com/youtube/v3/channels?part=snippet%2CcontentDetails%2Cstatistics&forUsername=vevo&key=AIzaSyDnqB0BPgDul4yHWQIiJNkW4Ok4uQ5O4DA')
-    xhr.send()
-}
 /*
-function getChannels (){
-    var url = "https://www.googleapis.com/youtube/v3/channels"
-
-    $.get(url, )
-}
-/*
-
-
-
-var gapi
-
-function authenticate() {
-    return gapi.auth2.getAuthInstance()
-        .signIn({scope: "https://www.googleapis.com/auth/youtube.readonly"})
-        .then(function() { console.log("Sign-in successful"); },
-            function(err) { console.error("Error signing in", err); });
-}
-function loadClient() {
-    gapi.client.setApiKey("AIzaSyDnqB0BPgDul4yHWQIiJNkW4Ok4uQ5O4DA");
-    return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
-        .then(function() { console.log("GAPI client loaded for API"); },
-            function(err) { console.error("Error loading GAPI client for API", err); });
-}
-// Make sure the client is loaded and sign-in is complete before calling this method.
-function execute() {
-    return gapi.client.youtube.channels.list({
-        "part": "snippet",
-        "forUsername": "AnimalPlanetTV"
-    })
-        .then(function(response) {
-                // Handle the results here (response.result has the parsed body).
-                console.log("Response", response);
-            },
-            function(err) { console.error("Execute error", err); });
-}
-gapi.load("client:auth2", function() {
-    gapi.auth2.init({client_id: "52353213905-n4vgqaoi94rqkmb2mrvvu2s8eld5enk1.apps.googleusercontent.com"});
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
