@@ -27,7 +27,7 @@ function getApiData() {
 
 
             /*Boucle for qui récupère toutes les images*/
-/*
+
             const nbitems = data.items.length
 
             for(let i=0; i< nbitems ; i++)
@@ -43,7 +43,7 @@ function getApiData() {
                     console.log(resultimages)
                 }
             }
-*/
+
 
             /*Boucle qui récupère Les images de taille moyenne + titre des chansons qui corespond à chaque image*/
 
@@ -66,7 +66,7 @@ function getApiData() {
 
             } /*fin boucle*/
 
-            /*Boucle for qui récupère le titre des chansons
+            /*Boucle for qui récupère le titre des chansons*/
             const nbitems_name = data.items.length
 
             for(let n=0; n< nbitems_name ; n++) {
@@ -104,9 +104,6 @@ getApiData()
 
 
 
-/*Récupérer le titre des tracks*/
-
-
 function getTracksData() {
     const xhrTracksData = new XMLHttpRequest()
     xhrTracksData.onreadystatechange = function () {
@@ -130,12 +127,9 @@ function getTracksData() {
     }
 
 
-    window.onload = function jorja() {
-        document.getElementById("jorja").onclick = function(){
             xhrTracksData.open('GET', 'https://api.spotify.com/v1/artists/1CoZyIx7UvdxT5c8UkMzHd/top-tracks?country=FR')
             xhrTracksData.send()
-        }
-    }
+
 
 }
 
@@ -145,8 +139,12 @@ getTracksData()
 
 
 
+
+
+
 /* ______________Artist_data*____________________________________*/
 
+/*
 function getTracksData() {
     const xhrTracksData = new XMLHttpRequest()
     xhrTracksData.onreadystatechange = function () {
@@ -183,6 +181,7 @@ function getTracksData() {
 
 getTracksData()
 
+*/
 
 
 
@@ -257,7 +256,7 @@ $('#next').click(function() {
 /*____________________________________SEARCH___________________*/
 
 
-
+/*
 
 function getSearchData() {
     const xhrSearchData = new XMLHttpRequest()
@@ -290,6 +289,9 @@ function getSearchData() {
 }*/
 
 getSearchData()
+
+
+ */
 
 // API YOUTUBE
 
